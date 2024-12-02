@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Apply the Outfit font globally */
+body {
+  font-family: "Outfit", sans-serif;
+}
+
+/* Style form elements */
+select,
+input,
+textarea {
+  border: 1px solid #c2c2c2;
+  outline-color: #c586a5;
+  border-radius: 4px;
+  padding: 0.5rem; /* Add some padding for a more consistent look */
+  font-family: "Outfit", sans-serif; /* Ensure the font is applied */
+}
+
+/* Focus state for better user interaction */
+select:focus,
+input:focus,
+textarea:focus {
+  border-color: #c586a5;
+  outline-color: #c586a5;
+  box-shadow: 0 0 0 3px rgba(197, 134, 165, 0.4); /* Adds a subtle shadow around the input */
+}
+
+/* Active state for elements */
+.active {
+  background-color: #ffebf5;
+  border-color: #c586a5;
+}
